@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include "platform.h"
+#include <xgpio.h>
+#include "xparameters.h"
+#include "sleep.h"
+
+int main()
+{
+   XGpio input1;
+   int pos, power;
+
+   XGpio_Initialize(&input1, XPAR_AXI_GPIO_0_DEVICE_ID);	//initialize input XGpio variable
+
+   XGpio_SetDataDirection(&input1, 1, 0xF);			//set first channel tristate buffer to input
+   XGpio_SetDataDirection(&input1, 2, 0xF);			//set second channel tristate buffer to input
+   init_platform();
+
+   while(1){
+      pos = XGpio_DiscreteRead(&input1, 1);
+      power = XGpio_DiscreteRead(&input1, 2);
+      xil_printf("%d%d\r", pos, power);
+   }
+   cleanup_platform();
+   return 0;
+}

@@ -1,0 +1,8 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/remco/Desktop/Decoder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity quadrature_decoder
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/remco/Final_Project_AES/Final_Project_AES.srcs/sources_1/imports/Downloads/pid.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity PID
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/remco/Final_Project_AES/Final_Project_AES.ip_user_files/bd/Block_Diagram/ip/Block_Diagram_axi_gpio_1_0/sim/Block_Diagram_axi_gpio_1_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Block_Diagram_axi_gpio_1_0
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/remco/Final_Project_AES/Final_Project_AES.srcs/sources_1/bd/Block_Diagram/hdl/Block_Diagram_wrapper.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Block_Diagram_wrapper

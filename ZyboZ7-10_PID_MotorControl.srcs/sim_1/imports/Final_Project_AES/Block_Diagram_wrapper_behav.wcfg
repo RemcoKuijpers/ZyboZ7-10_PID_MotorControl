@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="Block_Diagram_wrapper_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="Block_Diagram_wrapper" />
+            <top_module name="glbl" />
+            <top_module name="ipif_pkg" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="986064387754fs"></ZoomStartTime>
+      <ZoomEndTime time="1021420544218fs"></ZoomEndTime>
+      <Cursor1Time time="1053055000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="175"></NameColumnWidth>
+      <ValueColumnWidth column_width="98"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="14" />
+   <wvobject type="logic" fp_name="/Block_Diagram_wrapper/Block_Diagram_i/pwm_0/U0/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Block_Diagram_wrapper/Block_Diagram_i/pwm_0/U0/reset_n">
+      <obj_property name="ElementShortName">reset_n</obj_property>
+      <obj_property name="ObjectShortName">reset_n</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Block_Diagram_wrapper/Block_Diagram_i/pwm_0/U0/ena">
+      <obj_property name="ElementShortName">ena</obj_property>
+      <obj_property name="ObjectShortName">ena</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Block_Diagram_wrapper/Block_Diagram_i/pwm_0/U0/duty">
+      <obj_property name="ElementShortName">duty[15:0]</obj_property>
+      <obj_property name="ObjectShortName">duty[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Block_Diagram_wrapper/Block_Diagram_i/pwm_0/U0/pwm_out">
+      <obj_property name="ElementShortName">pwm_out[0:0]</obj_property>
+      <obj_property name="ObjectShortName">pwm_out[0:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Block_Diagram_wrapper/Block_Diagram_i/pwm_0/U0/pwm_n_out">
+      <obj_property name="ElementShortName">pwm_n_out[0:0]</obj_property>
+      <obj_property name="ObjectShortName">pwm_n_out[0:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Block_Diagram_wrapper/Block_Diagram_i/pwm_0/U0/count">
+      <obj_property name="ElementShortName">count[0:0]</obj_property>
+      <obj_property name="ObjectShortName">count[0:0]</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/Block_Diagram_wrapper/Block_Diagram_i/pwm_0/U0/half_duty_new">
+      <obj_property name="ElementShortName">half_duty_new</obj_property>
+      <obj_property name="ObjectShortName">half_duty_new</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Block_Diagram_wrapper/Block_Diagram_i/pwm_0/U0/half_duty">
+      <obj_property name="ElementShortName">half_duty[0:0]</obj_property>
+      <obj_property name="ObjectShortName">half_duty[0:0]</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/Block_Diagram_wrapper/Block_Diagram_i/pwm_0/U0/sys_clk">
+      <obj_property name="ElementShortName">sys_clk</obj_property>
+      <obj_property name="ObjectShortName">sys_clk</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/Block_Diagram_wrapper/Block_Diagram_i/pwm_0/U0/pwm_freq">
+      <obj_property name="ElementShortName">pwm_freq</obj_property>
+      <obj_property name="ObjectShortName">pwm_freq</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/Block_Diagram_wrapper/Block_Diagram_i/pwm_0/U0/bits_resolution">
+      <obj_property name="ElementShortName">bits_resolution</obj_property>
+      <obj_property name="ObjectShortName">bits_resolution</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/Block_Diagram_wrapper/Block_Diagram_i/pwm_0/U0/phases">
+      <obj_property name="ElementShortName">phases</obj_property>
+      <obj_property name="ObjectShortName">phases</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/Block_Diagram_wrapper/Block_Diagram_i/pwm_0/U0/period">
+      <obj_property name="ElementShortName">period</obj_property>
+      <obj_property name="ObjectShortName">period</obj_property>
+   </wvobject>
+</wave_config>

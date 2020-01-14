@@ -1,0 +1,304 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Jan  9 13:53:33 2020
+# Process ID: 17286
+# Current directory: /home/remco/Final_Project_AES/Final_Project_AES.runs/Block_Diagram_quadrature_decoder_0_0_synth_1
+# Command line: vivado -log Block_Diagram_quadrature_decoder_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Block_Diagram_quadrature_decoder_0_0.tcl
+# Log file: /home/remco/Final_Project_AES/Final_Project_AES.runs/Block_Diagram_quadrature_decoder_0_0_synth_1/Block_Diagram_quadrature_decoder_0_0.vds
+# Journal file: /home/remco/Final_Project_AES/Final_Project_AES.runs/Block_Diagram_quadrature_decoder_0_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source Block_Diagram_quadrature_decoder_0_0.tcl -notrace
+Command: synth_design -top Block_Diagram_quadrature_decoder_0_0 -part xc7z010clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 17461 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1392.348 ; gain = 88.684 ; free physical = 236 ; free virtual = 3472
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Block_Diagram_quadrature_decoder_0_0' [/home/remco/Final_Project_AES/Final_Project_AES.srcs/sources_1/bd/Block_Diagram/ip/Block_Diagram_quadrature_decoder_0_0/synth/Block_Diagram_quadrature_decoder_0_0.vhd:67]
+	Parameter positions bound to: 8000 - type: integer 
+	Parameter debounce_time bound to: 250 - type: integer 
+	Parameter set_origin_debounce_time bound to: 500000 - type: integer 
+INFO: [Synth 8-3491] module 'quadrature_decoder' declared at '/home/remco/Desktop/Decoder.vhd:9' bound to instance 'U0' of component 'quadrature_decoder' [/home/remco/Final_Project_AES/Final_Project_AES.srcs/sources_1/bd/Block_Diagram/ip/Block_Diagram_quadrature_decoder_0_0/synth/Block_Diagram_quadrature_decoder_0_0.vhd:98]
+INFO: [Synth 8-638] synthesizing module 'quadrature_decoder' [/home/remco/Desktop/Decoder.vhd:32]
+	Parameter positions bound to: 8000 - type: integer 
+	Parameter debounce_time bound to: 250 - type: integer 
+	Parameter set_origin_debounce_time bound to: 500000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'quadrature_decoder' (1#1) [/home/remco/Desktop/Decoder.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'Block_Diagram_quadrature_decoder_0_0' (2#1) [/home/remco/Final_Project_AES/Final_Project_AES.srcs/sources_1/bd/Block_Diagram/ip/Block_Diagram_quadrature_decoder_0_0/synth/Block_Diagram_quadrature_decoder_0_0.vhd:67]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1436.973 ; gain = 133.309 ; free physical = 250 ; free virtual = 3487
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1436.973 ; gain = 133.309 ; free physical = 251 ; free virtual = 3488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1436.973 ; gain = 133.309 ; free physical = 251 ; free virtual = 3488
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [Constraints 18-5210] No constraint will be written out.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.12 . Memory (MB): peak = 1772.609 ; gain = 1.000 ; free physical = 146 ; free virtual = 3250
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:25 . Memory (MB): peak = 1772.609 ; gain = 468.945 ; free physical = 214 ; free virtual = 3318
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:25 . Memory (MB): peak = 1772.609 ; gain = 468.945 ; free physical = 214 ; free virtual = 3318
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:25 . Memory (MB): peak = 1772.609 ; gain = 468.945 ; free physical = 216 ; free virtual = 3320
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/remco/Desktop/Decoder.vhd:82]
+INFO: [Synth 8-5546] ROM "debounce_cnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "a_prev" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "set_origin_cnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "set_origin_n_int" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:25 . Memory (MB): peak = 1772.609 ; gain = 468.945 ; free physical = 208 ; free virtual = 3313
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 6     
++---Registers : 
+	               13 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module quadrature_decoder 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 6     
++---Registers : 
+	               13 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "U0/debounce_cnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "U0/a_prev" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "U0/set_origin_cnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "U0/set_origin_n_int" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:26 . Memory (MB): peak = 1772.609 ; gain = 468.945 ; free physical = 196 ; free virtual = 3302
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:34 . Memory (MB): peak = 1772.609 ; gain = 468.945 ; free physical = 148 ; free virtual = 3256
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:34 . Memory (MB): peak = 1772.609 ; gain = 468.945 ; free physical = 148 ; free virtual = 3256
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:34 . Memory (MB): peak = 1772.609 ; gain = 468.945 ; free physical = 147 ; free virtual = 3255
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:35 . Memory (MB): peak = 1772.609 ; gain = 468.945 ; free physical = 151 ; free virtual = 3258
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:35 . Memory (MB): peak = 1772.609 ; gain = 468.945 ; free physical = 151 ; free virtual = 3258
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:35 . Memory (MB): peak = 1772.609 ; gain = 468.945 ; free physical = 151 ; free virtual = 3258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:35 . Memory (MB): peak = 1772.609 ; gain = 468.945 ; free physical = 151 ; free virtual = 3258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:35 . Memory (MB): peak = 1772.609 ; gain = 468.945 ; free physical = 151 ; free virtual = 3258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:35 . Memory (MB): peak = 1772.609 ; gain = 468.945 ; free physical = 151 ; free virtual = 3258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |    10|
+|2     |LUT1   |     3|
+|3     |LUT2   |    16|
+|4     |LUT3   |    21|
+|5     |LUT4   |     5|
+|6     |LUT5   |     4|
+|7     |LUT6   |    11|
+|8     |FDRE   |    63|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+-------------------+------+
+|      |Instance |Module             |Cells |
++------+---------+-------------------+------+
+|1     |top      |                   |   133|
+|2     |  U0     |quadrature_decoder |   133|
++------+---------+-------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:35 . Memory (MB): peak = 1772.609 ; gain = 468.945 ; free physical = 151 ; free virtual = 3258
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 1772.609 ; gain = 133.309 ; free physical = 207 ; free virtual = 3315
+Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:35 . Memory (MB): peak = 1772.609 ; gain = 468.945 ; free physical = 207 ; free virtual = 3315
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 10 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+25 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:36 . Memory (MB): peak = 1772.609 ; gain = 482.715 ; free physical = 201 ; free virtual = 3309
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint '/home/remco/Final_Project_AES/Final_Project_AES.runs/Block_Diagram_quadrature_decoder_0_0_synth_1/Block_Diagram_quadrature_decoder_0_0.dcp' has been generated.
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint '/home/remco/Final_Project_AES/Final_Project_AES.runs/Block_Diagram_quadrature_decoder_0_0_synth_1/Block_Diagram_quadrature_decoder_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Block_Diagram_quadrature_decoder_0_0_utilization_synth.rpt -pb Block_Diagram_quadrature_decoder_0_0_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.11 . Memory (MB): peak = 1796.621 ; gain = 0.000 ; free physical = 202 ; free virtual = 3310
+INFO: [Common 17-206] Exiting Vivado at Thu Jan  9 13:54:21 2020...

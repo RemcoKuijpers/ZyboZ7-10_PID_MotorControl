@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Jan  9 11:16:58 2020
+# Process ID: 9093
+# Current directory: /home/remco/Final_Project_AES/Final_Project_AES.runs/Block_Diagram_axi_gpio_2_0_synth_1
+# Command line: vivado -log Block_Diagram_axi_gpio_2_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Block_Diagram_axi_gpio_2_0.tcl
+# Log file: /home/remco/Final_Project_AES/Final_Project_AES.runs/Block_Diagram_axi_gpio_2_0_synth_1/Block_Diagram_axi_gpio_2_0.vds
+# Journal file: /home/remco/Final_Project_AES/Final_Project_AES.runs/Block_Diagram_axi_gpio_2_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source Block_Diagram_axi_gpio_2_0.tcl -notrace
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP Block_Diagram_axi_gpio_2_0, cache-ID = e243bd387bc11a2f.
+INFO: [Common 17-206] Exiting Vivado at Thu Jan  9 11:17:11 2020...

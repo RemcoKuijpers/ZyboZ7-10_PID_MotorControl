@@ -1,0 +1,9 @@
+vhdl xil_defaultlib  \
+"../../../bd/Block_Diagram/ip/Block_Diagram_quadrature_decoder_0_0/sim/Block_Diagram_quadrature_decoder_0_0.vhd" \
+"../../../bd/Block_Diagram/ip/Block_Diagram_pwm_0_0/sim/Block_Diagram_pwm_0_0.vhd" \
+"../../../bd/Block_Diagram/ip/Block_Diagram_axi_gpio_0_0/sim/Block_Diagram_axi_gpio_0_0.vhd" \
+"../../../bd/Block_Diagram/ip/Block_Diagram_rst_ps7_0_50M_0/sim/Block_Diagram_rst_ps7_0_50M_0.vhd" \
+"../../../bd/Block_Diagram/sim/Block_Diagram.vhd" \
+"../../../bd/Block_Diagram/ip/Block_Diagram_PID_0_1/sim/Block_Diagram_PID_0_1.vhd" \
+
+nosort

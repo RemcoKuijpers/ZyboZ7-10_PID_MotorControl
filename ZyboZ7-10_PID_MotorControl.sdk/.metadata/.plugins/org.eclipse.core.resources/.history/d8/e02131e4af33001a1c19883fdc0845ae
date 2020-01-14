@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include "platform.h"
+#include "xil_printf.h"
+#include <time.h>
+#include <xgpio.h>
+#include "xparameters.h"
+
+int main()
+{
+	XGpio input1;
+	int pos;
+	clock_t t;
+    init_platform();
+    print("Hello World\n\r");
+
+    cleanup_platform();
+    return 0;
+}

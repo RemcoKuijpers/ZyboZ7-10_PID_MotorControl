@@ -1,0 +1,527 @@
+
+*** Running vivado
+    with args -log Block_Diagram_PID_0_1.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Block_Diagram_PID_0_1.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source Block_Diagram_PID_0_1.tcl -notrace
+Command: synth_design -top Block_Diagram_PID_0_1 -part xc7z010clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 13220 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1392.348 ; gain = 89.684 ; free physical = 2000 ; free virtual = 4886
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Block_Diagram_PID_0_1' [/home/remco/Final_Project_AES/Final_Project_AES.srcs/sources_1/bd/Block_Diagram/ip/Block_Diagram_PID_0_1/synth/Block_Diagram_PID_0_1.vhd:76]
+INFO: [Synth 8-3491] module 'PID' declared at '/home/remco/Final_Project_AES/Final_Project_AES.srcs/sources_1/imports/Downloads/pid.vhd:4' bound to instance 'U0' of component 'PID' [/home/remco/Final_Project_AES/Final_Project_AES.srcs/sources_1/bd/Block_Diagram/ip/Block_Diagram_PID_0_1/synth/Block_Diagram_PID_0_1.vhd:111]
+INFO: [Synth 8-638] synthesizing module 'PID' [/home/remco/Final_Project_AES/Final_Project_AES.srcs/sources_1/imports/Downloads/pid.vhd:23]
+WARNING: [Synth 8-6014] Unused sequential element old_adc_reg was removed.  [/home/remco/Final_Project_AES/Final_Project_AES.srcs/sources_1/imports/Downloads/pid.vhd:96]
+INFO: [Synth 8-256] done synthesizing module 'PID' (1#1) [/home/remco/Final_Project_AES/Final_Project_AES.srcs/sources_1/imports/Downloads/pid.vhd:23]
+INFO: [Synth 8-256] done synthesizing module 'Block_Diagram_PID_0_1' (2#1) [/home/remco/Final_Project_AES/Final_Project_AES.srcs/sources_1/bd/Block_Diagram/ip/Block_Diagram_PID_0_1/synth/Block_Diagram_PID_0_1.vhd:76]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1436.973 ; gain = 134.309 ; free physical = 2012 ; free virtual = 4899
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1436.973 ; gain = 134.309 ; free physical = 2012 ; free virtual = 4899
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1436.973 ; gain = 134.309 ; free physical = 2012 ; free virtual = 4899
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [Constraints 18-5210] No constraint will be written out.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.12 . Memory (MB): peak = 1776.617 ; gain = 2.000 ; free physical = 1732 ; free virtual = 4663
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:25 . Memory (MB): peak = 1776.617 ; gain = 473.953 ; free physical = 1802 ; free virtual = 4734
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:25 . Memory (MB): peak = 1776.617 ; gain = 473.953 ; free physical = 1802 ; free virtual = 4734
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:25 . Memory (MB): peak = 1776.617 ; gain = 473.953 ; free physical = 1804 ; free virtual = 4736
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [/home/remco/Final_Project_AES/Final_Project_AES.srcs/sources_1/imports/Downloads/pid.vhd:71]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [/home/remco/Final_Project_AES/Final_Project_AES.srcs/sources_1/imports/Downloads/pid.vhd:76]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [/home/remco/Final_Project_AES/Final_Project_AES.srcs/sources_1/imports/Downloads/pid.vhd:66]
+WARNING: [Synth 8-6014] Unused sequential element Error_difference_reg was removed.  [/home/remco/Final_Project_AES/Final_Project_AES.srcs/sources_1/imports/Downloads/pid.vhd:50]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/remco/Final_Project_AES/Final_Project_AES.srcs/sources_1/imports/Downloads/pid.vhd:71]
+WARNING: [Synth 8-6014] Unused sequential element  was removed. 
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/remco/Final_Project_AES/Final_Project_AES.srcs/sources_1/imports/Downloads/pid.vhd:71]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/remco/Final_Project_AES/Final_Project_AES.srcs/sources_1/imports/Downloads/pid.vhd:71]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/remco/Final_Project_AES/Final_Project_AES.srcs/sources_1/imports/Downloads/pid.vhd:71]
+WARNING: [Synth 8-6014] Unused sequential element  was removed. 
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/remco/Final_Project_AES/Final_Project_AES.srcs/sources_1/imports/Downloads/pid.vhd:76]
+WARNING: [Synth 8-6014] Unused sequential element  was removed. 
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/remco/Final_Project_AES/Final_Project_AES.srcs/sources_1/imports/Downloads/pid.vhd:76]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/remco/Final_Project_AES/Final_Project_AES.srcs/sources_1/imports/Downloads/pid.vhd:76]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/remco/Final_Project_AES/Final_Project_AES.srcs/sources_1/imports/Downloads/pid.vhd:76]
+WARNING: [Synth 8-6014] Unused sequential element  was removed. 
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/remco/Final_Project_AES/Final_Project_AES.srcs/sources_1/imports/Downloads/pid.vhd:66]
+WARNING: [Synth 8-6014] Unused sequential element  was removed. 
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/remco/Final_Project_AES/Final_Project_AES.srcs/sources_1/imports/Downloads/pid.vhd:66]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/remco/Final_Project_AES/Final_Project_AES.srcs/sources_1/imports/Downloads/pid.vhd:66]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/remco/Final_Project_AES/Final_Project_AES.srcs/sources_1/imports/Downloads/pid.vhd:66]
+WARNING: [Synth 8-6014] Unused sequential element  was removed. 
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:25 . Memory (MB): peak = 1776.617 ; gain = 473.953 ; free physical = 1796 ; free virtual = 4728
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 7     
+	   3 Input     32 Bit       Adders := 2     
+	   2 Input     31 Bit       Adders := 7     
+	   3 Input     18 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 12    
+	               19 Bit    Registers := 2     
+	               18 Bit    Registers := 6     
+	               16 Bit    Registers := 1     
+	               15 Bit    Registers := 6     
+	                1 Bit    Registers := 1     
++---Multipliers : 
+	                 8x32  Multipliers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   3 Input     32 Bit        Muxes := 1     
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input     31 Bit        Muxes := 7     
+	   2 Input     19 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module PID 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 7     
+	   3 Input     32 Bit       Adders := 2     
+	   2 Input     31 Bit       Adders := 7     
+	   3 Input     18 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 12    
+	               19 Bit    Registers := 2     
+	               18 Bit    Registers := 6     
+	               16 Bit    Registers := 1     
+	               15 Bit    Registers := 6     
+	                1 Bit    Registers := 1     
++---Multipliers : 
+	                 8x32  Multipliers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   3 Input     32 Bit        Muxes := 1     
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input     31 Bit        Muxes := 7     
+	   2 Input     19 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-6014] Unused sequential element B was removed.  [/home/remco/Final_Project_AES/Final_Project_AES.srcs/sources_1/imports/Downloads/pid.vhd:71]
+WARNING: [Synth 8-6014] Unused sequential element B was removed. 
+WARNING: [Synth 8-6014] Unused sequential element B was removed.  [/home/remco/Final_Project_AES/Final_Project_AES.srcs/sources_1/imports/Downloads/pid.vhd:76]
+WARNING: [Synth 8-6014] Unused sequential element B was removed. 
+WARNING: [Synth 8-6014] Unused sequential element B was removed.  [/home/remco/Final_Project_AES/Final_Project_AES.srcs/sources_1/imports/Downloads/pid.vhd:66]
+WARNING: [Synth 8-6014] Unused sequential element B was removed. 
+WARNING: [Synth 8-6014] Unused sequential element A was removed.  [/home/remco/Final_Project_AES/Final_Project_AES.srcs/sources_1/imports/Downloads/pid.vhd:71]
+WARNING: [Synth 8-6014] Unused sequential element A was removed.  [/home/remco/Final_Project_AES/Final_Project_AES.srcs/sources_1/imports/Downloads/pid.vhd:76]
+WARNING: [Synth 8-6014] Unused sequential element A was removed.  [/home/remco/Final_Project_AES/Final_Project_AES.srcs/sources_1/imports/Downloads/pid.vhd:66]
+WARNING: [Synth 8-6014] Unused sequential element A was removed.  [/home/remco/Final_Project_AES/Final_Project_AES.srcs/sources_1/imports/Downloads/pid.vhd:71]
+WARNING: [Synth 8-6014] Unused sequential element B was removed. 
+WARNING: [Synth 8-6014] Unused sequential element A was removed.  [/home/remco/Final_Project_AES/Final_Project_AES.srcs/sources_1/imports/Downloads/pid.vhd:76]
+WARNING: [Synth 8-6014] Unused sequential element B was removed. 
+WARNING: [Synth 8-6014] Unused sequential element A was removed.  [/home/remco/Final_Project_AES/Final_Project_AES.srcs/sources_1/imports/Downloads/pid.vhd:66]
+WARNING: [Synth 8-6014] Unused sequential element B was removed. 
+WARNING: [Synth 8-6014] Unused sequential element A was removed.  [/home/remco/Final_Project_AES/Final_Project_AES.srcs/sources_1/imports/Downloads/pid.vhd:71]
+WARNING: [Synth 8-6014] Unused sequential element A was removed.  [/home/remco/Final_Project_AES/Final_Project_AES.srcs/sources_1/imports/Downloads/pid.vhd:76]
+WARNING: [Synth 8-6014] Unused sequential element A was removed.  [/home/remco/Final_Project_AES/Final_Project_AES.srcs/sources_1/imports/Downloads/pid.vhd:66]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/remco/Final_Project_AES/Final_Project_AES.srcs/sources_1/imports/Downloads/pid.vhd:71]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/remco/Final_Project_AES/Final_Project_AES.srcs/sources_1/imports/Downloads/pid.vhd:76]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/remco/Final_Project_AES/Final_Project_AES.srcs/sources_1/imports/Downloads/pid.vhd:66]
+DSP Report: Generating DSP i4, operation Mode is: A*B2.
+DSP Report: register A is absorbed into DSP i4.
+DSP Report: operator i4 is absorbed into DSP i4.
+DSP Report: operator i4 is absorbed into DSP i4.
+DSP Report: Generating DSP i4, operation Mode is: A2*B2.
+DSP Report: register A is absorbed into DSP i4.
+DSP Report: register A is absorbed into DSP i4.
+DSP Report: operator i4 is absorbed into DSP i4.
+DSP Report: operator i4 is absorbed into DSP i4.
+DSP Report: Generating DSP i4, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register B is absorbed into DSP i4.
+DSP Report: register A is absorbed into DSP i4.
+DSP Report: operator i4 is absorbed into DSP i4.
+DSP Report: operator i4 is absorbed into DSP i4.
+DSP Report: Generating DSP d4, operation Mode is: A*B2.
+DSP Report: register A is absorbed into DSP d4.
+DSP Report: operator d4 is absorbed into DSP d4.
+DSP Report: operator d4 is absorbed into DSP d4.
+DSP Report: Generating DSP d4, operation Mode is: A2*B2.
+DSP Report: register A is absorbed into DSP d4.
+DSP Report: register A is absorbed into DSP d4.
+DSP Report: operator d4 is absorbed into DSP d4.
+DSP Report: operator d4 is absorbed into DSP d4.
+DSP Report: Generating DSP d4, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register B is absorbed into DSP d4.
+DSP Report: register A is absorbed into DSP d4.
+DSP Report: operator d4 is absorbed into DSP d4.
+DSP Report: operator d4 is absorbed into DSP d4.
+DSP Report: Generating DSP p4, operation Mode is: A*B2.
+DSP Report: register A is absorbed into DSP p4.
+DSP Report: operator p4 is absorbed into DSP p4.
+DSP Report: operator p4 is absorbed into DSP p4.
+DSP Report: Generating DSP p4, operation Mode is: A2*B2.
+DSP Report: register A is absorbed into DSP p4.
+DSP Report: register A is absorbed into DSP p4.
+DSP Report: operator p4 is absorbed into DSP p4.
+DSP Report: operator p4 is absorbed into DSP p4.
+DSP Report: Generating DSP p4, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register B is absorbed into DSP p4.
+DSP Report: register A is absorbed into DSP p4.
+DSP Report: operator p4 is absorbed into DSP p4.
+DSP Report: operator p4 is absorbed into DSP p4.
+INFO: [Synth 8-3886] merging instance 'U0/Error_reg[16]' (FD) to 'U0/Error_reg[17]'
+INFO: [Synth 8-3886] merging instance 'U0/Error_reg[17]' (FD) to 'U0/Error_reg[18]'
+INFO: [Synth 8-3886] merging instance 'U0/old_error_reg[16]' (FDE) to 'U0/old_error_reg[18]'
+INFO: [Synth 8-3886] merging instance 'U0/old_error_reg[17]' (FDE) to 'U0/old_error_reg[18]'
+WARNING: [Synth 8-3332] Sequential element (con_Ki_reg[16]) is unused and will be removed from module PID.
+WARNING: [Synth 8-3332] Sequential element (con_Ki_reg[15]) is unused and will be removed from module PID.
+WARNING: [Synth 8-3332] Sequential element (con_Ki_reg[14]) is unused and will be removed from module PID.
+WARNING: [Synth 8-3332] Sequential element (con_Ki_reg[13]) is unused and will be removed from module PID.
+WARNING: [Synth 8-3332] Sequential element (con_Ki_reg[12]) is unused and will be removed from module PID.
+WARNING: [Synth 8-3332] Sequential element (con_Ki_reg[11]) is unused and will be removed from module PID.
+WARNING: [Synth 8-3332] Sequential element (con_Ki_reg[10]) is unused and will be removed from module PID.
+WARNING: [Synth 8-3332] Sequential element (con_Ki_reg[9]) is unused and will be removed from module PID.
+WARNING: [Synth 8-3332] Sequential element (con_Ki_reg[8]) is unused and will be removed from module PID.
+WARNING: [Synth 8-3332] Sequential element (con_Ki_reg[7]) is unused and will be removed from module PID.
+WARNING: [Synth 8-3332] Sequential element (con_Ki_reg[6]) is unused and will be removed from module PID.
+WARNING: [Synth 8-3332] Sequential element (con_Ki_reg[5]) is unused and will be removed from module PID.
+WARNING: [Synth 8-3332] Sequential element (con_Ki_reg[4]) is unused and will be removed from module PID.
+WARNING: [Synth 8-3332] Sequential element (con_Ki_reg[3]) is unused and will be removed from module PID.
+WARNING: [Synth 8-3332] Sequential element (con_Ki_reg[2]) is unused and will be removed from module PID.
+WARNING: [Synth 8-3332] Sequential element (con_Ki_reg[1]) is unused and will be removed from module PID.
+WARNING: [Synth 8-3332] Sequential element (con_Ki_reg[0]) is unused and will be removed from module PID.
+WARNING: [Synth 8-3332] Sequential element (con_Kd_reg[16]) is unused and will be removed from module PID.
+WARNING: [Synth 8-3332] Sequential element (con_Kd_reg[15]) is unused and will be removed from module PID.
+WARNING: [Synth 8-3332] Sequential element (con_Kd_reg[14]) is unused and will be removed from module PID.
+WARNING: [Synth 8-3332] Sequential element (con_Kd_reg[13]) is unused and will be removed from module PID.
+WARNING: [Synth 8-3332] Sequential element (con_Kd_reg[12]) is unused and will be removed from module PID.
+WARNING: [Synth 8-3332] Sequential element (con_Kd_reg[11]) is unused and will be removed from module PID.
+WARNING: [Synth 8-3332] Sequential element (con_Kd_reg[10]) is unused and will be removed from module PID.
+WARNING: [Synth 8-3332] Sequential element (con_Kd_reg[9]) is unused and will be removed from module PID.
+WARNING: [Synth 8-3332] Sequential element (con_Kd_reg[8]) is unused and will be removed from module PID.
+WARNING: [Synth 8-3332] Sequential element (con_Kd_reg[7]) is unused and will be removed from module PID.
+WARNING: [Synth 8-3332] Sequential element (con_Kd_reg[6]) is unused and will be removed from module PID.
+WARNING: [Synth 8-3332] Sequential element (con_Kd_reg[5]) is unused and will be removed from module PID.
+WARNING: [Synth 8-3332] Sequential element (con_Kd_reg[4]) is unused and will be removed from module PID.
+WARNING: [Synth 8-3332] Sequential element (con_Kd_reg[3]) is unused and will be removed from module PID.
+WARNING: [Synth 8-3332] Sequential element (con_Kd_reg[2]) is unused and will be removed from module PID.
+WARNING: [Synth 8-3332] Sequential element (con_Kd_reg[1]) is unused and will be removed from module PID.
+WARNING: [Synth 8-3332] Sequential element (con_Kd_reg[0]) is unused and will be removed from module PID.
+WARNING: [Synth 8-3332] Sequential element (con_Kp_reg[16]) is unused and will be removed from module PID.
+WARNING: [Synth 8-3332] Sequential element (con_Kp_reg[15]) is unused and will be removed from module PID.
+WARNING: [Synth 8-3332] Sequential element (con_Kp_reg[14]) is unused and will be removed from module PID.
+WARNING: [Synth 8-3332] Sequential element (con_Kp_reg[13]) is unused and will be removed from module PID.
+WARNING: [Synth 8-3332] Sequential element (con_Kp_reg[12]) is unused and will be removed from module PID.
+WARNING: [Synth 8-3332] Sequential element (con_Kp_reg[11]) is unused and will be removed from module PID.
+WARNING: [Synth 8-3332] Sequential element (con_Kp_reg[10]) is unused and will be removed from module PID.
+WARNING: [Synth 8-3332] Sequential element (con_Kp_reg[9]) is unused and will be removed from module PID.
+WARNING: [Synth 8-3332] Sequential element (con_Kp_reg[8]) is unused and will be removed from module PID.
+WARNING: [Synth 8-3332] Sequential element (con_Kp_reg[7]) is unused and will be removed from module PID.
+WARNING: [Synth 8-3332] Sequential element (con_Kp_reg[6]) is unused and will be removed from module PID.
+WARNING: [Synth 8-3332] Sequential element (con_Kp_reg[5]) is unused and will be removed from module PID.
+WARNING: [Synth 8-3332] Sequential element (con_Kp_reg[4]) is unused and will be removed from module PID.
+WARNING: [Synth 8-3332] Sequential element (con_Kp_reg[3]) is unused and will be removed from module PID.
+WARNING: [Synth 8-3332] Sequential element (con_Kp_reg[2]) is unused and will be removed from module PID.
+WARNING: [Synth 8-3332] Sequential element (con_Kp_reg[1]) is unused and will be removed from module PID.
+WARNING: [Synth 8-3332] Sequential element (con_Kp_reg[0]) is unused and will be removed from module PID.
+WARNING: [Synth 8-3332] Sequential element (output_loaded_reg[31]) is unused and will be removed from module PID.
+WARNING: [Synth 8-3332] Sequential element (output_loaded_reg[30]) is unused and will be removed from module PID.
+WARNING: [Synth 8-3332] Sequential element (output_loaded_reg[29]) is unused and will be removed from module PID.
+WARNING: [Synth 8-3332] Sequential element (output_loaded_reg[28]) is unused and will be removed from module PID.
+WARNING: [Synth 8-3332] Sequential element (output_loaded_reg[27]) is unused and will be removed from module PID.
+WARNING: [Synth 8-3332] Sequential element (output_loaded_reg[26]) is unused and will be removed from module PID.
+WARNING: [Synth 8-3332] Sequential element (output_loaded_reg[25]) is unused and will be removed from module PID.
+WARNING: [Synth 8-3332] Sequential element (output_loaded_reg[24]) is unused and will be removed from module PID.
+WARNING: [Synth 8-3332] Sequential element (output_loaded_reg[23]) is unused and will be removed from module PID.
+WARNING: [Synth 8-3332] Sequential element (output_loaded_reg[22]) is unused and will be removed from module PID.
+WARNING: [Synth 8-3332] Sequential element (output_loaded_reg[21]) is unused and will be removed from module PID.
+WARNING: [Synth 8-3332] Sequential element (output_loaded_reg[20]) is unused and will be removed from module PID.
+WARNING: [Synth 8-3332] Sequential element (output_loaded_reg[19]) is unused and will be removed from module PID.
+WARNING: [Synth 8-3332] Sequential element (output_loaded_reg[18]) is unused and will be removed from module PID.
+WARNING: [Synth 8-3332] Sequential element (output_loaded_reg[17]) is unused and will be removed from module PID.
+WARNING: [Synth 8-3332] Sequential element (output_loaded_reg[16]) is unused and will be removed from module PID.
+WARNING: [Synth 8-3332] Sequential element (dir_loaded_reg[31]) is unused and will be removed from module PID.
+WARNING: [Synth 8-3332] Sequential element (dir_loaded_reg[30]) is unused and will be removed from module PID.
+WARNING: [Synth 8-3332] Sequential element (dir_loaded_reg[29]) is unused and will be removed from module PID.
+WARNING: [Synth 8-3332] Sequential element (dir_loaded_reg[28]) is unused and will be removed from module PID.
+WARNING: [Synth 8-3332] Sequential element (dir_loaded_reg[27]) is unused and will be removed from module PID.
+WARNING: [Synth 8-3332] Sequential element (dir_loaded_reg[26]) is unused and will be removed from module PID.
+WARNING: [Synth 8-3332] Sequential element (dir_loaded_reg[25]) is unused and will be removed from module PID.
+WARNING: [Synth 8-3332] Sequential element (dir_loaded_reg[24]) is unused and will be removed from module PID.
+WARNING: [Synth 8-3332] Sequential element (dir_loaded_reg[23]) is unused and will be removed from module PID.
+WARNING: [Synth 8-3332] Sequential element (dir_loaded_reg[22]) is unused and will be removed from module PID.
+WARNING: [Synth 8-3332] Sequential element (dir_loaded_reg[21]) is unused and will be removed from module PID.
+WARNING: [Synth 8-3332] Sequential element (dir_loaded_reg[20]) is unused and will be removed from module PID.
+WARNING: [Synth 8-3332] Sequential element (dir_loaded_reg[19]) is unused and will be removed from module PID.
+WARNING: [Synth 8-3332] Sequential element (dir_loaded_reg[18]) is unused and will be removed from module PID.
+WARNING: [Synth 8-3332] Sequential element (dir_loaded_reg[17]) is unused and will be removed from module PID.
+WARNING: [Synth 8-3332] Sequential element (dir_loaded_reg[16]) is unused and will be removed from module PID.
+WARNING: [Synth 8-3332] Sequential element (dir_loaded_reg[15]) is unused and will be removed from module PID.
+WARNING: [Synth 8-3332] Sequential element (dir_loaded_reg[14]) is unused and will be removed from module PID.
+WARNING: [Synth 8-3332] Sequential element (dir_loaded_reg[13]) is unused and will be removed from module PID.
+WARNING: [Synth 8-3332] Sequential element (dir_loaded_reg[12]) is unused and will be removed from module PID.
+WARNING: [Synth 8-3332] Sequential element (dir_loaded_reg[11]) is unused and will be removed from module PID.
+WARNING: [Synth 8-3332] Sequential element (dir_loaded_reg[10]) is unused and will be removed from module PID.
+WARNING: [Synth 8-3332] Sequential element (dir_loaded_reg[9]) is unused and will be removed from module PID.
+WARNING: [Synth 8-3332] Sequential element (dir_loaded_reg[8]) is unused and will be removed from module PID.
+WARNING: [Synth 8-3332] Sequential element (dir_loaded_reg[7]) is unused and will be removed from module PID.
+WARNING: [Synth 8-3332] Sequential element (dir_loaded_reg[6]) is unused and will be removed from module PID.
+WARNING: [Synth 8-3332] Sequential element (dir_loaded_reg[5]) is unused and will be removed from module PID.
+WARNING: [Synth 8-3332] Sequential element (dir_loaded_reg[4]) is unused and will be removed from module PID.
+WARNING: [Synth 8-3332] Sequential element (dir_loaded_reg[3]) is unused and will be removed from module PID.
+WARNING: [Synth 8-3332] Sequential element (dir_loaded_reg[2]) is unused and will be removed from module PID.
+WARNING: [Synth 8-3332] Sequential element (dir_loaded_reg[1]) is unused and will be removed from module PID.
+INFO: [Synth 8-3886] merging instance 'U0/output_loaded_reg[0]' (FDR) to 'U0/output_loaded_reg[1]'
+INFO: [Synth 8-3886] merging instance 'U0/output_reg[0]' (FDR) to 'U0/output_reg[1]'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:30 . Memory (MB): peak = 1776.617 ; gain = 473.953 ; free physical = 1777 ; free virtual = 4713
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping      | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|PID         | A*B2             | 15     | 15     | -      | -      | 15     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|PID         | A2*B2            | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|PID         | (PCIN>>17)+A2*B2 | 15     | 15     | -      | -      | 15     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|PID         | A*B2             | 15     | 15     | -      | -      | 15     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|PID         | A2*B2            | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|PID         | (PCIN>>17)+A2*B2 | 15     | 15     | -      | -      | 15     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|PID         | A*B2             | 15     | 15     | -      | -      | 15     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|PID         | A2*B2            | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|PID         | (PCIN>>17)+A2*B2 | 15     | 15     | -      | -      | 15     | 1    | 1    | -    | -    | -     | 0    | 0    | 
++------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:40 . Memory (MB): peak = 1776.617 ; gain = 473.953 ; free physical = 1616 ; free virtual = 4559
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:40 . Memory (MB): peak = 1776.617 ; gain = 473.953 ; free physical = 1614 ; free virtual = 4557
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:41 . Memory (MB): peak = 1801.148 ; gain = 498.484 ; free physical = 1608 ; free virtual = 4551
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:42 . Memory (MB): peak = 1801.148 ; gain = 498.484 ; free physical = 1607 ; free virtual = 4550
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:42 . Memory (MB): peak = 1801.148 ; gain = 498.484 ; free physical = 1607 ; free virtual = 4550
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:42 . Memory (MB): peak = 1801.148 ; gain = 498.484 ; free physical = 1607 ; free virtual = 4550
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:42 . Memory (MB): peak = 1801.148 ; gain = 498.484 ; free physical = 1607 ; free virtual = 4550
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:42 . Memory (MB): peak = 1801.148 ; gain = 498.484 ; free physical = 1607 ; free virtual = 4550
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:00:42 . Memory (MB): peak = 1801.148 ; gain = 498.484 ; free physical = 1607 ; free virtual = 4550
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |CARRY4  |   964|
+|2     |DSP48E1 |     9|
+|3     |LUT1    |   319|
+|4     |LUT2    |   286|
+|5     |LUT3    |   316|
+|6     |LUT4    |   125|
+|7     |LUT5    |  2794|
+|8     |LUT6    |    39|
+|9     |FDRE    |   346|
++------+--------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |  5198|
+|2     |  U0     |PID    |  5198|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:42 . Memory (MB): peak = 1801.148 ; gain = 498.484 ; free physical = 1607 ; free virtual = 4550
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 138 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 1801.148 ; gain = 158.840 ; free physical = 1676 ; free virtual = 4619
+Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:42 . Memory (MB): peak = 1801.156 ; gain = 498.484 ; free physical = 1676 ; free virtual = 4619
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 973 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'Block_Diagram_PID_0_1' is not ideal for floorplanning, since the cellview 'PID' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+25 Infos, 141 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:44 . Memory (MB): peak = 1833.164 ; gain = 543.270 ; free physical = 1670 ; free virtual = 4614
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint '/home/remco/Final_Project_AES/Final_Project_AES.runs/Block_Diagram_PID_0_1_synth_1/Block_Diagram_PID_0_1.dcp' has been generated.
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint '/home/remco/Final_Project_AES/Final_Project_AES.runs/Block_Diagram_PID_0_1_synth_1/Block_Diagram_PID_0_1.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Block_Diagram_PID_0_1_utilization_synth.rpt -pb Block_Diagram_PID_0_1_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.13 . Memory (MB): peak = 1857.176 ; gain = 0.000 ; free physical = 1661 ; free virtual = 4610
+INFO: [Common 17-206] Exiting Vivado at Thu Jan  9 13:00:26 2020...

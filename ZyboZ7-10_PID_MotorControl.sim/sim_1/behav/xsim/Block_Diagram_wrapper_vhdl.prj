@@ -1,0 +1,16 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../Desktop/Decoder.vhd" \
+"../../../../../Desktop/PWM_Generator.vhd" \
+"../../../../Final_Project_AES.srcs/sources_1/imports/Downloads/pid.vhd" \
+"../../../../Final_Project_AES.ip_user_files/bd/Block_Diagram/ip/Block_Diagram_quadrature_decoder_0_0/sim/Block_Diagram_quadrature_decoder_0_0.vhd" \
+"../../../../Final_Project_AES.ip_user_files/bd/Block_Diagram/ip/Block_Diagram_pwm_0_0/sim/Block_Diagram_pwm_0_0.vhd" \
+"../../../../Final_Project_AES.ip_user_files/bd/Block_Diagram/ip/Block_Diagram_axi_gpio_0_0/sim/Block_Diagram_axi_gpio_0_0.vhd" \
+"../../../../Final_Project_AES.ip_user_files/bd/Block_Diagram/ip/Block_Diagram_rst_ps7_0_50M_0/sim/Block_Diagram_rst_ps7_0_50M_0.vhd" \
+"../../../../Final_Project_AES.ip_user_files/bd/Block_Diagram/sim/Block_Diagram.vhd" \
+"../../../../Final_Project_AES.ip_user_files/bd/Block_Diagram/ip/Block_Diagram_PID_0_1/sim/Block_Diagram_PID_0_1.vhd" \
+"../../../../Final_Project_AES.ip_user_files/bd/Block_Diagram/ip/Block_Diagram_axi_gpio_1_0/sim/Block_Diagram_axi_gpio_1_0.vhd" \
+"../../../../Final_Project_AES.srcs/sources_1/bd/Block_Diagram/hdl/Block_Diagram_wrapper.vhd" \
+
+# Do not sort compile order
+nosort

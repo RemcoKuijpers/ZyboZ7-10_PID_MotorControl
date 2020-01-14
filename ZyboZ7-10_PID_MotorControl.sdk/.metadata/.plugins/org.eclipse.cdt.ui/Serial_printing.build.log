@@ -1,0 +1,32 @@
+20:54:03 **** Build of configuration Debug for project Serial_printing ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Serial_printing_bsp/ps7_cortexa9_1/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:4:0:
+../../Serial_printing_bsp/ps7_cortexa9_1/include/xtime_l.h:89:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/platform.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Serial_printing_bsp/ps7_cortexa9_1/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building target: Serial_printing.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Serial_printing_bsp/ps7_cortexa9_1/lib -o "Serial_printing.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Serial_printing.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Serial_printing.elf  |tee "Serial_printing.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23680	   1264	  22576	  47520	   b9a0	Serial_printing.elf
+Finished building: Serial_printing.elf.size
+ 
+
+20:54:03 Build Finished (took 612ms)
+
